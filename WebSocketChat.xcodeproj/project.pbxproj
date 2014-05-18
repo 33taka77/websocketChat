@@ -22,6 +22,10 @@
 		F919A10619278A5F0084F662 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919A0E519278A5F0084F662 /* UIKit.framework */; };
 		F919A10E19278A5F0084F662 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F919A10C19278A5F0084F662 /* InfoPlist.strings */; };
 		F919A11019278A5F0084F662 /* WebSocketChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F919A10F19278A5F0084F662 /* WebSocketChatTests.m */; };
+		F919A12A19278C080084F662 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919A12919278C080084F662 /* CFNetwork.framework */; };
+		F919A12C19278C240084F662 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F919A12B19278C240084F662 /* Security.framework */; };
+		F919A12E19278C5E0084F662 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F919A12D19278C5E0084F662 /* libicucore.dylib */; };
+		F919A13E192790940084F662 /* libSocketRocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F919A137192790800084F662 /* libSocketRocket.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = F919A0DD19278A5F0084F662;
 			remoteInfo = WebSocketChat;
+		};
+		F919A136192790800084F662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F919A12F1927907F0084F662 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		F919A138192790800084F662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F919A12F1927907F0084F662 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		F919A13A192790800084F662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F919A12F1927907F0084F662 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		F919A13C192790800084F662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F919A12F1927907F0084F662 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,6 +87,10 @@
 		F919A10B19278A5F0084F662 /* WebSocketChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebSocketChatTests-Info.plist"; sourceTree = "<group>"; };
 		F919A10D19278A5F0084F662 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F919A10F19278A5F0084F662 /* WebSocketChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocketChatTests.m; sourceTree = "<group>"; };
+		F919A12919278C080084F662 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F919A12B19278C240084F662 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F919A12D19278C5E0084F662 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F919A12F1927907F0084F662 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = "../../../../Downloads/SocketRocket-master/SocketRocket.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F919A13E192790940084F662 /* libSocketRocket.a in Frameworks */,
+				F919A12E19278C5E0084F662 /* libicucore.dylib in Frameworks */,
+				F919A12C19278C240084F662 /* Security.framework in Frameworks */,
+				F919A12A19278C080084F662 /* CFNetwork.framework in Frameworks */,
 				F919A0E419278A5F0084F662 /* CoreGraphics.framework in Frameworks */,
 				F919A0E619278A5F0084F662 /* UIKit.framework in Frameworks */,
 				F919A0E219278A5F0084F662 /* Foundation.framework in Frameworks */,
@@ -84,6 +124,7 @@
 		F919A0D519278A5F0084F662 = {
 			isa = PBXGroup;
 			children = (
+				F919A12F1927907F0084F662 /* SocketRocket.xcodeproj */,
 				F919A0E719278A5F0084F662 /* WebSocketChat */,
 				F919A10919278A5F0084F662 /* WebSocketChatTests */,
 				F919A0E019278A5F0084F662 /* Frameworks */,
@@ -103,6 +144,9 @@
 		F919A0E019278A5F0084F662 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F919A12D19278C5E0084F662 /* libicucore.dylib */,
+				F919A12B19278C240084F662 /* Security.framework */,
+				F919A12919278C080084F662 /* CFNetwork.framework */,
 				F919A0E119278A5F0084F662 /* Foundation.framework */,
 				F919A0E319278A5F0084F662 /* CoreGraphics.framework */,
 				F919A0E519278A5F0084F662 /* UIKit.framework */,
@@ -153,6 +197,17 @@
 				F919A10C19278A5F0084F662 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F919A1301927907F0084F662 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F919A137192790800084F662 /* libSocketRocket.a */,
+				F919A139192790800084F662 /* SocketRocket.framework */,
+				F919A13B192790800084F662 /* SRWebSocketTests.octest */,
+				F919A13D192790800084F662 /* TestChat.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +273,12 @@
 			mainGroup = F919A0D519278A5F0084F662;
 			productRefGroup = F919A0DF19278A5F0084F662 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F919A1301927907F0084F662 /* Products */;
+					ProjectRef = F919A12F1927907F0084F662 /* SocketRocket.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F919A0DD19278A5F0084F662 /* WebSocketChat */,
@@ -225,6 +286,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F919A137192790800084F662 /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = F919A136192790800084F662 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F919A139192790800084F662 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = F919A138192790800084F662 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F919A13B192790800084F662 /* SRWebSocketTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.octest;
+			remoteRef = F919A13A192790800084F662 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F919A13D192790800084F662 /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = F919A13C192790800084F662 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F919A0DC19278A5F0084F662 /* Resources */ = {
@@ -388,12 +480,20 @@
 		F919A11419278A5F0084F662 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebSocketChat/WebSocketChat-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/SocketRocket",
+				);
 				INFOPLIST_FILE = "WebSocketChat/WebSocketChat-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SocketRocket";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -401,12 +501,20 @@
 		F919A11519278A5F0084F662 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebSocketChat/WebSocketChat-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/SocketRocket",
+				);
 				INFOPLIST_FILE = "WebSocketChat/WebSocketChat-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/SocketRocket";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
